@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiverPro — Swim Analysis Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">DiverPro</h1>
+        <nav>
+          <a href="#overview">Overview</a>
+          <a href="#tech">Technology</a>
+          <a href="#example">Example</a>
+          <a href="#usage">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="overview" class="section hero">
+      <div class="container center">
+        <h2>Empowering Swimmers Through Data</h2>
+        <p>DiverPro is a computer-vision-based tool that helps swimmers analyze and perfect their dive starts. Using pose estimation and physics-based trajectory modeling, it provides clear visual insights for improvement.</p>
+      </div>
+    </section>
+
+    <section id="tech" class="section alt">
+      <div class="container center">
+        <h2>Technology</h2>
+        <p>The project uses Python, Numpy, OpenCV,and MediaPipe to process and visualize dive data.</p>
+      </div>
+    </section>
+
+    <section id="example" class="section">
+      <div class="container center">
+        <h2>Example Dive Analysis</h2>
+        <p>This video demonstrates DiverPro’s trajectory overlay in action.</p>
+        <video class="example-video" width="760" controls preload="metadata" playsinline>
+          <source src="smartdive/polyfit_overlay.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section id="usage" class="section alt">
+      <div class="container center">
+        <h2>GitHub Repository</h2>
+        <p>To test DiverPro on your system, follow go the GitHub repository below:</p>
+        <a class="btn primary" href="https://github.com/strdaniil/diverpro" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> DiverPror</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
