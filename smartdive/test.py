@@ -2,7 +2,7 @@ from pose_tracking_utils import track_joint
 from overlay import overlay_trajectory_on_video
 from polyfit import overlay_fit_curve
 
-traj = track_joint("videos/adive.mp4", "hips", output_npy="trajectories/adive_hips.npy")
+traj = track_joint("videos/adive.mp4", "ankles", output_npy="trajectories/adive_hips.npy")
 video_path = "videos/adive.mp4"
 trajectory_path = "trajectories/adive_hips.npy"
 output_path = "adive_output_overlay.mp4"
