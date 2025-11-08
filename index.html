@@ -22,44 +22,77 @@
     <section id="overview" class="section hero">
       <div class="container center">
         <h2>Helping Swimmers Through Data</h2>
-        <p>DiverPro is a computer vision tool that helps swimmers analyze and perfect their swim starts. Using pose estimation and trajectory modeling, it allows anyone to record their dives and analyze their form not only with an eye test, but with real visual feedback and statistics.</p>
+        <p>DiverPro is a computer vision tool that helps swimmers analyze and perfect their swim starts. Using pose estimation and trajectory modeling, anyone can record their dives and analyze their form not only with an eye test, but with real visual feedback and statistics.</p>
       </div>
     </section>
 
     <section id="tech" class="section alt">
       <div class="container center">
         <h2>Technology</h2>
-        <p>The project uses many technologies including Python, Numpy, OpenCV, and MediaPipe to process and visualize dive data.</p>
+        <p>The project uses many technologies including Python, NumPy, OpenCV and MediaPipe to process and visualize dive data.</p>
+
+        <div class="tech-logos">
+          <div class="tech-logo">
+            <img src="python.png" alt="Python logo">
+          </div>
+          <div class="tech-logo">
+            <img src="numpy.png" alt="NumPy logo">
+          </div>
+          <div class="tech-logo">
+            <img src="opencv.png" alt="OpenCV logo">
+          </div>
+          <div class="tech-logo">
+            <img src="mediapipe.png" alt="MediaPipe logo">
+          </div>
+        </div>
+
       </div>
     </section>
+
 
     <section id="example" class="section">
       <div class="container center">
         <h2>Example Dive Analysis</h2>
-        <p>Taking raw dive footage, we can produce many trajectories of different human joints.</p>
-        <p>Example dive:</p>
-        <video class="example-video" width="760" controls preload="metadata" playsinline>
-          <source src="smartdive/adive.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p>Hip Tracking:</p>
-        <video class="example-video" width="760" controls preload="metadata" playsinline>
-          <source src="smartdive/polyfit_overlay_hips.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p>Shoulder Tracking:</p>
-        <video class="example-video" width="760" controls preload="metadata" playsinline>
-          <source src="smartdive/polyfit_overlay_shoulders.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p>Head (nose) Tracking:</p>
-        <video class="example-video" width="760" controls preload="metadata" playsinline>
-          <source src="smartdive/polyfit_overlay_nose.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p>More joint tracking and analysis tools, along with instructions on how to use them, are available in the Github Repository!</p>
+        <p class="example-intro">
+          From raw dive footage, DiverPro can overlay the trajectories of multiple human joints for analysis.
+        </p>
+
+        <div class="example-block example-dive">
+          <h3>Example Dive</h3>
+          <video class="example-video" width="850" controls preload="metadata" playsinline>
+            <source src="smartdive/adive.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="example-block example-hip">
+          <h3>Hip Tracking</h3>
+          <video class="example-video" width="850" controls preload="metadata" playsinline>
+            <source src="smartdive/polyfit_overlay_hips.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="example-block example-shoulder">
+          <h3>Shoulder Tracking</h3>
+          <video class="example-video" width="850" controls preload="metadata" playsinline>
+            <source src="smartdive/polyfit_overlay_shoulders.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="example-block example-head">
+          <h3>Head (Nose) Tracking</h3>
+          <video class="example-video" width="850" controls preload="metadata" playsinline>
+            <source src="smartdive/polyfit_overlay_nose.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <p class="example-note">
+          More joint tracking and analysis tools, along with instructions, are available in the GitHub repository.
+        </p>
       </div>
     </section>
+
+  
+
 
     <section id="usage" class="section alt">
       <div class="container center">
